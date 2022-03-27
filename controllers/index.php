@@ -38,5 +38,4 @@
 
 // dd($results[0]->description);
 
-$tasks = $app['database']->selectAll('tasks');
 require 'views/index.view.php';
