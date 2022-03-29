@@ -18,7 +18,4 @@
   <header>
     <?php require 'nav.php';?>
     <h1>Laracast PHP Practitioner</h1>
-    <h1>
-      <?=$greeting?>
-    </h1>
   </header>

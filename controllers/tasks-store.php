@@ -2,7 +2,7 @@
 
 // $task_description = $_POST['description'];
 // dd($task_description);
-$tasks = $app['database']->store('tasks');
+$tasks = App::get('database')->store('tasks');
 
 Request::redirect('/tasks');
 // require 'views/tasks.view.php';
