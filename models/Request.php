@@ -14,10 +14,4 @@ class Request
   {
     return $_SERVER['REQUEST_METHOD'];
   }
-
-  public static function redirect($url, $status_code = 303)
-  {
-    header("Location: $url", true, $status_code);
-    die();
-  }
 }

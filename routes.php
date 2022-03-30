@@ -10,12 +10,13 @@ $router = new Router();
 //   'names' => 'controllers/add-name.php'
 // ]);
 
-$router->get('', 'controllers/index.php');
-$router->get('about', 'controllers/about.php');
-$router->get('about/culture', 'controllers/about-culture.php');
-$router->get('contact', 'controllers/contact.php');
-$router->post('names', 'controllers/add-name.php');
-$router->get('tasks', 'controllers/tasks-list.php');
-$router->post('tasks', 'controllers/tasks-store.php');
+$router->get('', 'PageController@home');
+$router->get('about', 'PageController@about');
+$router->get('contact', 'PageController@contact');
+// $router->get('about/culture', 'controllers/about-culture.php');
+// $router->post('names', 'controllers/add-name.php');
+$router->get('tasks', 'TaskController@index');
+$router->post('tasks', 'TaskController@store');
+// $router->post('tasks', 'controllers/tasks-store.php');
 
 // var_dump($router->routes);

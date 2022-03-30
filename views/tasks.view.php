@@ -2,7 +2,7 @@
 
 <h1>Create new task</h1>
 
-<form action="/tasks" method="post">
+<form method="post">
   <input type="text" name='description' />
   <button type="submit">create</button>
 </form>
