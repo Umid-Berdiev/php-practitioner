@@ -1,5 +1,7 @@
 <?php
 
+// namespace App\Core;
+
 /**
  * connection to db
  */

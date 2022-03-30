@@ -1,6 +1,6 @@
 <?php
 
-$router = new Router();
+$router = new App\Models\Router();
 
 // $router->define([
 //   '' => 'controllers/index.php',
@@ -12,6 +12,7 @@ $router = new Router();
 
 $router->get('', 'PageController@home');
 $router->get('about', 'PageController@about');
+$router->get('about/culture', 'PageController@aboutCulture');
 $router->get('contact', 'PageController@contact');
 // $router->get('about/culture', 'controllers/about-culture.php');
 // $router->post('names', 'controllers/add-name.php');
